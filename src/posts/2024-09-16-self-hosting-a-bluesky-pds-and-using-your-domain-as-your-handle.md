@@ -101,13 +101,13 @@ reboot
 
 Your SSH session will close while the VM reboots. The PDS will restart with the new SMTP configuration.
 
-`ssh` into the server again and run `pds create-invite-code`. It will output a code that you can use to create an account.
+`ssh` into the server again and run `pdsadmin create-invite-code`. It will output a code that you can use to create an account.
 
 ## Create a Bluesky account
 
 Go to https://bsky.app/ (while logged out), click "Sign up". Select "Hosting provider" -> "Custom", and enter `pds.bskydemo.xyz`
 
-Enter the information requested. The invite code is the one you got from `pds create-invite-code`. You can use your email, even if you already have a Bluesky account. You'll need to verify the email, so use an address you can access.
+Enter the information requested. The invite code is the one you got from `pdsadmin create-invite-code`. You can use your email, even if you already have a Bluesky account. You'll need to verify the email, so use an address you can access.
 
 For the handle, enter anything for now, like `temp`. Your user handle will be `temp.pds.bskydemo.xyz`. We'll change it later.
 
